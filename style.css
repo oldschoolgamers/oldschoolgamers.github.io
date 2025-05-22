@@ -6,22 +6,32 @@ body {
     padding: 0;
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Assegura que o conteúdo preenche toda a altura da viewport */
+    min-height: 100vh;
 }
 
 header {
-    background-color: #333; /* Um tom de cinza escuro para contraste */
+    background-color: #333;
     padding: 1em 0;
-    text-align: center;
+    display: flex; /* Necessário para flexbox */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+}
+
+header img {
+    max-width: 150px; /* Ajuste conforme necessário */
+    max-height: 150px; /* Ajuste conforme necessário */
+    margin-right: 1em; /* Espaço entre a imagem e o título */
+    vertical-align: middle; /* Alinha verticalmente com o texto */
 }
 
 header h1 {
     color: yellow;
+    vertical-align: middle; /* Alinha verticalmente com a imagem */
 }
 
 main {
     display: flex;
-    flex-grow: 1; /* Permite que o main ocupe o espaço restante */
+    flex-grow: 1;
 }
 
 aside {
@@ -46,7 +56,7 @@ aside nav a {
 
 section {
     padding: 1em;
-    flex-grow: 1; /* Permite que a seção ocupe o espaço restante */
+    flex-grow: 1;
 }
 
 footer {
@@ -55,12 +65,16 @@ footer {
     text-align: center;
 }
 
-/* Responsividade básica (ajuste para telas menores) */
+/* Responsividade básica */
 @media (max-width: 768px) {
     main {
-        flex-direction: column; /* Muda para coluna em telas menores */
+        flex-direction: column;
     }
     aside {
-        width: 100%; /* Ocupa toda a largura em telas menores */
+        width: 100%;
+    }
+    header {
+        flex-direction: column; /* Empilha a imagem e o título em telas menores */
+        align-items: center;
     }
 }
