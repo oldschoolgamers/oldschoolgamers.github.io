@@ -10,7 +10,7 @@ body {
 }
 
 header {
-    background-color: #333;
+    background-color: #222;
     padding: 1em 0;
     display: flex; /* Necessário para flexbox */
     align-items: center; /* Centraliza verticalmente */
@@ -34,8 +34,13 @@ main {
     flex-grow: 1;
 }
 
+main section h2 {
+    color: yellow;
+    vertical-align: middle; /* Alinha verticalmente com a imagem */
+}
+
 aside {
-    background-color: #333;
+    background-color: #222;
     padding: 1em;
     width: 200px;
 }
@@ -57,12 +62,31 @@ aside nav a {
 section {
     padding: 1em;
     flex-grow: 1;
+    background-image: url('logo.png'); /* Caminho para sua imagem */
+    background-repeat: no-repeat; /* Impede repetição da imagem */
+    background-position: center center; /* Centraliza a imagem */
+    background-size: contain; /* Ajusta o tamanho da imagem para caber no contêiner */
+    /* Ajuste o tamanho e o padding da seção para que o logo seja centralizado e de tamanho adequado*/
+    min-height: 300px; /* Altura mínima para a seção, ajuste conforme necessário */
+    justify-content: center; /* Centraliza conteúdo dentro da seção */
+    align-items: center; /* Centraliza conteúdo verticalmente na seção */
 }
 
 footer {
-    background-color: #333;
+    background-color: #222;
     padding: 1em 0;
     text-align: center;
+}
+
+footer a {
+    color: yellow; /* Cor do link */
+    text-decoration: none; /* Remove o sublinhado */
+}
+
+/* Estilo hover (opcional) */
+footer a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+    color: #FFD700; /* Cor do link ao passar o mouse (opcional) */
 }
 
 /* Responsividade básica */
@@ -77,4 +101,20 @@ footer {
         flex-direction: column; /* Empilha a imagem e o título em telas menores */
         align-items: center;
     }
+}
+
+aside nav a {
+    color: white;
+    text-decoration: none; /* Remove o sublinhado padrão */
+    position: relative; /* Necessário para posicionar o pseudo-elemento */
+}
+
+aside nav a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: yellow;
 }
