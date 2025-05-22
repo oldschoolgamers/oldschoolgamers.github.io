@@ -62,6 +62,7 @@ aside nav a {
 section {
     padding: 1em;
     flex-grow: 1;
+    /* Ajuste o tamanho e o padding da seção para que o logo seja centralizado e de tamanho adequado*/
     min-height: 300px; /* Altura mínima para a seção, ajuste conforme necessário */
     justify-content: center; /* Centraliza conteúdo dentro da seção */
     align-items: center; /* Centraliza conteúdo verticalmente na seção */
