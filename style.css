@@ -1,0 +1,66 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Assegura que o conteúdo preenche toda a altura da viewport */
+}
+
+header {
+    background-color: #333; /* Um tom de cinza escuro para contraste */
+    padding: 1em 0;
+    text-align: center;
+}
+
+header h1 {
+    color: yellow;
+}
+
+main {
+    display: flex;
+    flex-grow: 1; /* Permite que o main ocupe o espaço restante */
+}
+
+aside {
+    background-color: #333;
+    padding: 1em;
+    width: 200px;
+}
+
+aside nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+aside nav li {
+    margin-bottom: 0.5em;
+}
+
+aside nav a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 1em;
+    flex-grow: 1; /* Permite que a seção ocupe o espaço restante */
+}
+
+footer {
+    background-color: #333;
+    padding: 1em 0;
+    text-align: center;
+}
+
+/* Responsividade básica (ajuste para telas menores) */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column; /* Muda para coluna em telas menores */
+    }
+    aside {
+        width: 100%; /* Ocupa toda a largura em telas menores */
+    }
+}
