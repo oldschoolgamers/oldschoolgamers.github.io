@@ -62,11 +62,6 @@ aside nav a {
 section {
     padding: 1em;
     flex-grow: 1;
-    background-image: url('logo.png'); /* Caminho para sua imagem */
-    background-repeat: no-repeat; /* Impede repetição da imagem */
-    background-position: center center; /* Centraliza a imagem */
-    background-size: contain; /* Ajusta o tamanho da imagem para caber no contêiner */
-    /* Ajuste o tamanho e o padding da seção para que o logo seja centralizado e de tamanho adequado*/
     min-height: 300px; /* Altura mínima para a seção, ajuste conforme necessário */
     justify-content: center; /* Centraliza conteúdo dentro da seção */
     align-items: center; /* Centraliza conteúdo verticalmente na seção */
