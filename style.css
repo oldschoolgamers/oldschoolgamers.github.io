@@ -10,8 +10,12 @@ body {
 }
 
 header {
+    background-image: url('logo.png'); /* Caminho para sua imagem */
+    background-position: center center;
     background-color: #222;
-    padding: 1em 0;
+    background-size: cover;
+    background-repeat: no-repeat; /* ou no-repeat, dependendo do efeito desejado */
+    padding: 4em 0;
     display: flex; /* Necessário para flexbox */
     align-items: center; /* Centraliza verticalmente */
     justify-content: center; /* Centraliza horizontalmente */
