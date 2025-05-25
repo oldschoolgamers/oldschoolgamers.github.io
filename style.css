@@ -10,29 +10,43 @@ body {
 }
 
 header {
-    background-image: url('logo.png'); /* Caminho para sua imagem */
-    background-position: center center;
-    background-color: rgba(2,2,2,0.5);
-    background-size: cover;
     background-repeat: no-repeat; /* ou no-repeat, dependendo do efeito desejado */
-    padding: 4em 0;
-    display: flex; /* Necessário para flexbox */
     align-items: center; /* Centraliza verticalmente */
     justify-content: center; /* Centraliza horizontalmente */
+    height: 100px;
 }
+
+#bgheader {
+    background-image: url('logo.png'); /* Caminho para sua imagem */
+    background-position: center center;
+    background-size: cover;
+    height: 100px;
+    width: 100%;
+    opacity: 0.5;
+    position: absolute;
+}
+
+header h1{
+    position: absolute;
+    opacity: 1.0;
+    margin: auto;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    color: yellow;
+    vertical-align: middle;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 
 header img {
     max-width: 150px; /* Ajuste conforme necessário */
     max-height: 150px; /* Ajuste conforme necessário */
     margin-right: 1em; /* Espaço entre a imagem e o título */
     vertical-align: middle; /* Alinha verticalmente com o texto */
-}
-
-header h1 {
-    color: yellow;
-    border-color: #222;
-    background-color: rgba(2,2,2,0.5);
-    vertical-align: middle; /* Alinha verticalmente com a imagem */
 }
 
 main {
