@@ -13,17 +13,21 @@ header {
     background-repeat: no-repeat; /* ou no-repeat, dependendo do efeito desejado */
     align-items: center; /* Centraliza verticalmente */
     justify-content: center; /* Centraliza horizontalmente */
-    height: 100px;
+    height: 250px;
 }
 
 #bgheader {
     background-image: url('logo.png'); /* Caminho para sua imagem */
     background-position: center center;
     background-size: cover;
-    height: 100px;
+    height: 250px;
     width: 100%;
+    max-width: 1180px;
     opacity: 0.5;
     position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
 }
 
 header h1{
@@ -31,7 +35,7 @@ header h1{
     opacity: 1.0;
     margin: auto;
     width: 100%;
-    height: 100px;
+    height: 250px;
     text-align: center;
     color: yellow;
     vertical-align: middle;
@@ -41,12 +45,12 @@ header h1{
     flex-wrap: wrap;
 }
 
-
-header img {
-    max-width: 150px; /* Ajuste conforme necessário */
-    max-height: 150px; /* Ajuste conforme necessário */
-    margin-right: 1em; /* Espaço entre a imagem e o título */
-    vertical-align: middle; /* Alinha verticalmente com o texto */
+@media screen and (max-width: 900px) {
+    header,
+    header h1,
+    #bgheader {
+        height: 100px;
+    }
 }
 
 main {
