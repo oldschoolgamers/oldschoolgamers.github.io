@@ -119,13 +119,3 @@ footer a:hover {
         width: 100%;
     }
 }
-
-aside nav a::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background-color: yellow;
-}
